@@ -460,6 +460,11 @@
         "url": "https://www.worldometers.info/coronavirus/country/honduras/"
     },
     {
+        "cname": "channel-islands",
+        "name": "Channel Islands",
+        "url": "https://www.worldometers.info/coronavirus/country/channel-islands/"
+    },
+    {
         "cname": "san-marino",
         "name": "San Marino",
         "url": "https://www.worldometers.info/coronavirus/country/san-marino/"
@@ -468,11 +473,6 @@
         "cname": "cote-d-ivoire",
         "name": "Ivory Coast",
         "url": "https://www.worldometers.info/coronavirus/country/cote-d-ivoire/"
-    },
-    {
-        "cname": "channel-islands",
-        "name": "Channel Islands",
-        "url": "https://www.worldometers.info/coronavirus/country/channel-islands/"
     },
     {
         "cname": "viet-nam",
@@ -490,14 +490,14 @@
         "url": "https://www.worldometers.info/coronavirus/country/state-of-palestine/"
     },
     {
-        "cname": "malta",
-        "name": "Malta",
-        "url": "https://www.worldometers.info/coronavirus/country/malta/"
-    },
-    {
         "cname": "nigeria",
         "name": "Nigeria",
         "url": "https://www.worldometers.info/coronavirus/country/nigeria/"
+    },
+    {
+        "cname": "malta",
+        "name": "Malta",
+        "url": "https://www.worldometers.info/coronavirus/country/malta/"
     },
     {
         "cname": "ghana",
@@ -705,14 +705,14 @@
         "url": "https://www.worldometers.info/coronavirus/country/ethiopia/"
     },
     {
-        "cname": "bermuda",
-        "name": "Bermuda",
-        "url": "https://www.worldometers.info/coronavirus/country/bermuda/"
-    },
-    {
         "cname": "cayman-islands",
         "name": "Cayman Islands",
         "url": "https://www.worldometers.info/coronavirus/country/cayman-islands/"
+    },
+    {
+        "cname": "bermuda",
+        "name": "Bermuda",
+        "url": "https://www.worldometers.info/coronavirus/country/bermuda/"
     },
     {
         "cname": "eritrea",
