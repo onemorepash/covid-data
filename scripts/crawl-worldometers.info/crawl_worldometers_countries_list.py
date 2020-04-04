@@ -2,6 +2,7 @@
 import shutil
 import tempfile
 import json
+import re
 
 from urllib.request     import Request, urlopen
 from urllib.error       import URLError, HTTPError
@@ -10,8 +11,7 @@ from lxml               import html, etree
 
 import crawl_wmeter_definitions as definitions
 
-
-# Connect to worldometers.com and save the coronavirus title page to a temporary file
+# Connect to worldometers.info and save the coronavirus title page to a temporary file
 request = Request(definitions.wmeter_countries_list_url_prefix, headers={'User-Agent': definitions.wmeter_user_agent})
 
 try:
@@ -40,10 +40,10 @@ else:
         country_list    = []
 
         for country_i in country_links:
-            country = {}
-
-            country['name'] = country_i.text
-            country['url']  = definitions.wmeter_countries_list_url_prefix + country_i.attrib['href']
+            country             = {}
+            country['cname']    = definitions.country_cname_from_href( country_i.attrib['href'] )
+            country['name']     = country_i.text
+            country['url']      = definitions.wmeter_countries_list_url_prefix + country_i.attrib['href']
 
             country_list.append(country)
 
