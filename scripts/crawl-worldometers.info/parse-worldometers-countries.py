@@ -4,11 +4,10 @@ import shutil
 import tempfile
 import json
 
-from urllib.request     import Request, urlopen
-from urllib.error       import URLError, HTTPError
-from lxml               import html, etree
-from jsonfinder         import jsonfinder
-
+from urllib.request import  Request, urlopen
+from urllib.error   import  URLError, HTTPError
+from lxml           import  html, etree
+from jsonfinder     import  jsonfinder
 
 # Get the countries list from json
 
@@ -44,6 +43,9 @@ with open(country_filename, encoding="utf8") as country_page_html:
     html_parser     = etree.HTMLParser()
     html_tree       = etree.parse(country_page_html, parser = html_parser)
 
-    country_cases   = definitions.get_country_data_cumulative_linear( html_tree )
+    country_data    = definitions.get_country_data_cumulative_linear( html_tree )
 
-    print ( json.dumps(country_cases) )
+    print ( json.dumps(country_data) )
+
+    #for date in country_data['cases']['dates']:
+    #    print (date, '\t:\t', country_data['cases']['dates'] )

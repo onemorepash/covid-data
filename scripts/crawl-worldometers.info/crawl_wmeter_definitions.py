@@ -1,11 +1,16 @@
 
-# This file defines the worldometers.info pasing functions
-# it's full of magic constants and black magic regexes
+#
+# This module defines the worldometers.info constants and parsing functions
+# it's full and black magic xpath's and regex'es.
+#
+# The goal is to keep all this in one place and let other modules
+# be functional and mess-agnostic.
+#
 
 import re
 import demjson
 
-from lxml   import html, etree
+from lxml       import  html, etree
 
 ### Constants
 
@@ -25,7 +30,7 @@ def get_country_links( tree ):
     return tree.xpath('.//table[@id="main_table_countries_today"]')[0].xpath('.//a[@class="mt_a"]')
 
 
-# Magic with parces a country page HTML and
+# Magic wich parses a country page HTML and
 # returns a object with lists of dates and values
 
 def parse_chart_script( tree, chart_name ):
@@ -43,22 +48,26 @@ def parse_chart_script( tree, chart_name ):
 # Wrapper which calls parse_chart_script() for cases and deaths separately and composes a joint object with all data
 def get_country_data_cumulative_linear(tree):
 
-    res             = {}
-    res['cases']    = {}
-    res['deaths']   = {}
+    res = {}
 
     # Running parser for cases and add the data to the results object
-    chart_name = 'coronavirus-cases-linear'
-    data       = parse_chart_script( tree, chart_name )
+    data = parse_chart_script( tree, 'coronavirus-cases-linear' )
 
-    res['cases']['dates']  = data['xAxis']['categories']
-    res['cases']['values'] = data['series'][0]['data']
+    # Iterate through dates and number of cases
+    # and create a dictionaty { date : { 'cases': value } }
+    for date, value in zip(data['xAxis']['categories'], data['series'][0]['data']):
+        if date not in res:
+            res[date] = {}
+        res[date]['cases'] = value
 
     # Running parser for deaths and add the data to the results object
-    chart_name      = 'coronavirus-deaths-linear'
-    data            = parse_chart_script( tree, chart_name )
+    data = parse_chart_script( tree, 'coronavirus-deaths-linear' )
 
-    res['deaths']['dates']  = data['xAxis']['categories']
-    res['deaths']['values'] = data['series'][0]['data']
+    # Iterate through dates and number of deaths
+    # and create a dictionaty { date : { 'deaths': value } }
+    for date, value in zip(data['xAxis']['categories'], data['series'][0]['data']):
+        if date not in res:
+            res[date] = {}
+        res[date]['deaths'] = value
 
     return res
