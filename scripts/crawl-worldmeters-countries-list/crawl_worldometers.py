@@ -8,7 +8,7 @@ from urllib.error       import URLError, HTTPError
 
 from lxml               import html, etree
 
-import crawl_wmeter_country_list_definitions as definitions
+import crawl_wmeter_definitions as definitions
 
 
 # Connect to worldometers.com and save the coronavirus title page to a temporary file
