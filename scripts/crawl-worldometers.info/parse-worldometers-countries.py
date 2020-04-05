@@ -30,20 +30,21 @@ for country in country_list:
     else:
         print ("success.")
 
-        with tempfile.NamedTemporaryFile(delete=True) as country_page_html:
+        with tempfile.NamedTemporaryFile(delete=True) as country_tmp_file:
             shutil.copyfileobj(response, country_tmp_file)
 
-            #Open the temporary file
-            #with open(country_tmp_file.name, encoding="utf8") as country_page_html:
-            print ('Parsing ' + country['name'])
+            # tmp file was opened to write into it in binary mode, so we can't read characters from it
+            # opening it in character mode to pass to the parser
+            with open(country_tmp_file.name, encoding="utf8") as country_page_html:
+                print ('Parsing ' + country['name'])
 
-            html_parser     = etree.HTMLParser()
-            html_tree       = etree.parse(country_page_html, parser = html_parser)
+                html_parser     = etree.HTMLParser()
+                html_tree       = etree.parse(country_page_html, parser = html_parser)
 
-            country_data    = definitions.get_country_data_cumulative_linear( html_tree )
+                country_data    = definitions.get_country_data_cumulative_linear( html_tree )
 
-            country_data_filename = definitions.data_dir + country['cname'] + definitions.countries_datafiles_extention
-            print ('Writing output data to ', country_data_filename)
+                country_data_filename = definitions.data_dir + country['cname'] + definitions.countries_datafiles_extention
+                print ('Writing output data to ', country_data_filename)
 
-            with open(country_data_filename, 'w', encoding='utf8') as country_data_file:
-                definitions.create_gnuplot_data(country_data, country_data_file)
+                with open(country_data_filename, 'w', encoding='utf8') as country_data_file:
+                    definitions.create_gnuplot_data(country_data, country_data_file)

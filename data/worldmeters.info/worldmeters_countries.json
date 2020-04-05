@@ -485,6 +485,11 @@
         "url": "https://www.worldometers.info/coronavirus/country/state-of-palestine/"
     },
     {
+        "cname": "nigeria",
+        "name": "Nigeria",
+        "url": "https://www.worldometers.info/coronavirus/country/nigeria/"
+    },
+    {
         "cname": "mauritius",
         "name": "Mauritius",
         "url": "https://www.worldometers.info/coronavirus/country/mauritius/"
@@ -493,11 +498,6 @@
         "cname": "malta",
         "name": "Malta",
         "url": "https://www.worldometers.info/coronavirus/country/malta/"
-    },
-    {
-        "cname": "nigeria",
-        "name": "Nigeria",
-        "url": "https://www.worldometers.info/coronavirus/country/nigeria/"
     },
     {
         "cname": "senegal",

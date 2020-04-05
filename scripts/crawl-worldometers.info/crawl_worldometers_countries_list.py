@@ -25,10 +25,13 @@ except URLError as http_error:
         print('Reason: ', http_error.reason)
 else:
     print ( ' success.' )
+
+    # Put the HTML page in a temporary file
     with tempfile.NamedTemporaryFile(delete=True) as countries_list_tmp_file:
         shutil.copyfileobj(response, countries_list_tmp_file)
 
-        # Open the temporary file
+        # tmp file was opened to write into it in binary mode, so we can't read characters from it
+        # opening it in character mode to pass to the parser
         with open(countries_list_tmp_file.name, encoding="utf8") as countries_list_html:
 
             # Parse HTML and create a list of dictionatries [ {'name' : <country name>, "url" : <country page url> } ]
