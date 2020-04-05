@@ -14,9 +14,9 @@ set style fill solid 0.45 noborder
 
 set term pngcairo size 1800,1200 font "Liberation Sans,12"
 
-set output "../../plots/per-country/france.png"
+set output "../../plots/per-country/{{country_cname}}.png"
 
-filename = "../../data/worldmeters.info/france.txt"
+filename = "../../data/worldmeters.info/{{country_cname}}.txt"
 
 set timefmt "%Y-%m-%d"
 
@@ -26,7 +26,7 @@ stats filename every ::1 u 5   nooutput prefix "DEATHS"
 
 
 set multiplot layout 2,2 margin 0.1,0.95,0.1,0.85 spacing 0.1,0.1
-set label 100 "France" center font ",40" at screen 0.5, 0.95 tc '#505050'
+set label 100 "{{country_name}}" center font ",40" at screen 0.5, 0.95 tc '#505050'
 
 
 set xdata time
@@ -61,7 +61,6 @@ plot filename every ::1 u 1:5 w boxes ls 2 axis x1y2 t "Total deaths", \
      filename every ::1 u 1:(($6-1)*100) w points ls 2 lw 3 axis x1y1 notitle, \
      filename every ::1 u 1:(($6-1)*100) w lines ls 2 dashtype 1 lw 3 s sb axis x1y1 notitle, \
      NaN w linespoints ls 2 lw 3 t "Daily growth rate"
-
 
 unset mytics
 set ytics autofreq
@@ -102,9 +101,9 @@ unset y2label
 unset y2tics
 set key top left opaque
 
-set label 1 at (CASES_max-CASES_min)/2,DEATHS_max*0.85  sprintf("ρ = %.3f", DOC_correlation) left front enhanced tc '#808080'
+set label 1 at (CASES_max-CASES_min)/4,DEATHS_max*0.85  sprintf("ρ = %.3f", DOC_correlation) left front enhanced tc '#808080'
 
-set label 2 at (CASES_max-CASES_min)/2,DEATHS_max*0.78 sprintf("Mortality: %.1f%%", DEATHS_max/CASES_max*100) left front enhanced tc '#808080'
+set label 2 at (CASES_max-CASES_min)/4,DEATHS_max*0.78 sprintf("Mortality: %.1f%%", DEATHS_max/CASES_max*100) left front enhanced tc '#808080'
 
 #set label 2 at (CASES_max-CASES_min)/2.5,DEATHS_max*0.72 sprintf("%.1f deaths per 1000 cases (linear fit)", DOC_slope*1000) right front enhanced
 
