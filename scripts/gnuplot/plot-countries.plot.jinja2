@@ -1,0 +1,151 @@
+set datafile separator ","
+
+set style line 101 lc rgb '#808080' lt 1 lw 1
+set border ls 101
+
+set style line 1  linecolor rgb "#a6cee3"  linewidth 1.000 dashtype solid pointtype 7 pointsize 1
+set style line 2  linecolor rgb "#fb9a99"  linewidth 1.000 dashtype solid pointtype 7 pointsize 1
+
+#set style line 11  linecolor rgb "#808080"  linewidth 1.000 dashtype solid pointtype 1 pointsize default
+#set style line 12  lt 0 linecolor rgb "#808080"  linewidth 1.000 dashtype 4 pointtype 0 pointsize default
+
+set boxwidth 0.75 relative
+set style fill solid 0.45 noborder
+
+set term pngcairo size 1800,1200 font "Liberation Sans,12"
+
+set output "../../plots/per-country/{{country_cname}}.png"
+
+filename = "../../data/worldmeters.info/{{country_cname}}.txt"
+
+set timefmt "%Y-%m-%d"
+today_date = strftime("%Y-%m-%d", time(0))
+
+
+stats filename every ::1 u 2   nooutput prefix "CASES"
+stats filename every ::1 u 5   nooutput prefix "DEATHS"
+
+stats filename every ::1 u 3   nooutput prefix "CDR"
+stats filename every ::1 u 6   nooutput prefix "DDR"
+
+stats filename every ::1 u 4   nooutput prefix "NCD"
+stats filename every ::1 u 7   nooutput prefix "NDD"
+
+stats filename every ::1 u 2:5 nooutput prefix "DOC"
+
+stats filename every ::(CASES_records-6) u 2:5 nooutput prefix "DOCLW"
+
+stats filename every ::(NCD_records-6) u 4 nooutput prefix "NCDLW"
+stats filename every ::(NCD_records-6) u 7 nooutput prefix "NDDLW"
+
+set grid front
+
+#
+# Enable multiplot
+#
+
+set multiplot layout 2,2 margin 0.1,0.95,0.1,0.85 spacing 0.1,0.1
+set label 100 "{{country_name}}" center font ",40" at screen 0.5, 0.95 tc '#505050'
+
+
+#
+# Cases total and cases daily rate
+#
+
+set xdata time
+set xrange [:today_date]
+
+set yrange [0:50]
+
+set format x "%b, %d" timedate
+set format y "%.0f%%"
+set format y2 "%.0s%c"
+
+set ylabel "Daily growth rate\n\n" tc '#808080'
+set y2label "Total deaths" tc '#808080'
+
+set ytics nomirror out 10
+set mytics 2
+set y2tics nomirror out autofreq
+set xtics nomirror out
+set grid mytics
+
+set key top left opaque tc '#808080'
+
+plot filename every ::1 u 1:2 w boxes ls 1 axis x1y2 t "Total cases", \
+     filename every ::1 u 1:(($3-1)*100) w points ls 1 lw 3 axis x1y1  notitle, \
+     filename every ::1 u 1:(($3-1)*100) w l ls 1 dashtype 1 lw 3 s sb axis x1y1 notitle, \
+     NaN w linespoints ls 1 lw 3 t "Daily growth rate"
+
+
+#
+# Deaths total and deaths daily rate
+#
+
+set y2tics nomirror out autofreq
+
+set key top left opaque tc '#808080'
+
+plot filename every ::1 u 1:5 w boxes ls 2 axis x1y2 t "Total deaths", \
+     filename every ::1 u 1:(($6-1)*100) w points ls 2 lw 3 axis x1y1 notitle, \
+     filename every ::1 u 1:(($6-1)*100) w lines ls 2 dashtype 1 lw 3 s sb axis x1y1 notitle, \
+     NaN w linespoints ls 2 lw 3 t "Daily growth rate"
+
+#
+# Daily Cases and Deaths
+#
+
+set ylabel "New daily cases\n" tc '#808080'
+set y2label "New daily deaths" tc '#808080'
+
+set key top left opaque tc '#808080'
+
+unset yrange
+unset y2range
+
+set  yrange[:NCD_mean +3*NCD_stddev]
+set y2range[:NDD_mean+3*NDD_stddev]
+
+set format y  "%.0s%c"
+set format y2 "%.0f"
+
+set  ytics nomirror out autofreq
+set y2tics nomirror out autofreq
+
+
+plot  filename every ::1 u 1:4 w points ls 1 lw 3 axis x1y1 notitle, \
+      filename every ::1 u 1:4 w lines ls 1 lw 3 s sb axis x1y1 notitle, \
+      NaN w linespoints ls 1 lw 3 axis x1y1 t "New daily cases", \
+      filename every ::1 u 1:7 w point ls 2 lw 3 axis x1y2 notitle, \
+      filename every ::1 u 1:7 w lines ls 2 lw 3 s sb axis x1y2 notitle, \
+      NaN w linespoints ls 2 lw 3 axis x1y2 t "New daily deaths"
+
+# Deaths over Cases
+
+unset xdata
+set format x "%.0s%c"
+set format y "%.0s%c"
+unset xrange
+unset yrange
+set yrange [0:]
+
+set ylabel "Deaths\n" tc '#808080'
+set xlabel "Cases" tc '#808080'
+unset y2label
+
+set xtics nomirror out autofreq
+set ytics nomirror out autofreq
+unset y2tics
+
+set key top left opaque
+
+set label 10 at graph 0.27, graph 0.82 sprintf("ρ = %.3f", DOC_correlation) left front enhanced tc '#808080'
+
+set label 21 at graph 0.33,graph 0.73 sprintf("Cases/deaths total:\nCases/deaths 7 days:", DEATHS_max/CASES_max*100, DOCLW_slope*100) right front enhanced tc '#808080'
+set label 22 at graph 0.33,graph 0.73 sprintf(" %.1f%%\n %.1f%%", DEATHS_max/CASES_max*100.0, 100.0*NDDLW_sum/NCDLW_sum) left front enhanced tc '#808080'
+
+plot filename every ::1 u 2:5 w points ls 2 lw 3 axis x1y1 notitle, \
+     filename every ::1 u 2:5 w lines ls 2 lw 2 s sb axis x1y1 t "Deaths over Cases", \
+     DOCLW_slope*x + DOCLW_intercept w l ls 2 lw 2 dashtype 2 t "Last 7 days linear fit"
+
+unset multiplot
