@@ -93,7 +93,7 @@ def create_gnuplot_data(country_data, datafile):
     # Convert country data into whitespace delimited columns gnuplot data files: on line, one date
     # Calculate daily growth rate and deily increment for cases and deaths.
 
-    datafile.write( '{:10},{:>15},{:>15},{:>15},{:>15},{:>15},{:>15}\n'.format( '"Date"', '"Total Cases"', '"Cases Rate"', "Cases Inc",
+    datafile.write( '{:10},{:>15},{:>15},{:>15},{:>15},{:>15},{:>15}\n'.format( '"Date"', '"Total Cases"', '"Cases Rate"', '"Cases Inc"',
                                                                                  '"Total Deaths"', '"Deaths Rate"', '"Deaths Inc"'
                                                                             )
                   )
