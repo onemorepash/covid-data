@@ -1,5 +1,6 @@
 scripts/__pycache__/
 *.py[cod]
 
-plots/.DS_Store
 plots/*
+!plots/per-country/
+plots/per-country/*
