@@ -46,6 +46,10 @@ for country in country_list:
 
                 country_data    = definitions.get_country_data_cumulative_linear( html_tree )
 
+                all_countries_data[country['cname']]            = {}
+                all_countries_data[country['cname']]['name']    = country['name']
+                all_countries_data[country['cname']]['data']    = country_data
+
                 country_data_filename = definitions.data_dir + country['cname'] + definitions.countries_datafiles_extention
                 print ('Writing output data to ', country_data_filename)
                 with open(country_data_filename, 'w', encoding='utf8') as country_data_file:
@@ -53,4 +57,4 @@ for country in country_list:
 
 print ('Dumping all countries data to ', definitions.countries_data_json_filename)
 with open(definitions.countries_data_json_filename, 'w', encoding='utf8') as all_countries_data_file:
-    json.dump(country_data, all_countries_data_file, indent=4)
+    json.dump(all_countries_data, all_countries_data_file, indent=4)
