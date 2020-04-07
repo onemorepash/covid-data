@@ -14,6 +14,9 @@ from jsonfinder     import  jsonfinder
 with open(definitions.countries_list_json_filename, encoding='utf8') as countries_list_json_file:
     country_list = json.load(countries_list_json_file)
 
+
+all_countries_data = {}
+
 for country in country_list:
     request = Request( country['url'], headers={'User-Agent': definitions.wmeter_user_agent} )
 
@@ -45,6 +48,9 @@ for country in country_list:
 
                 country_data_filename = definitions.data_dir + country['cname'] + definitions.countries_datafiles_extention
                 print ('Writing output data to ', country_data_filename)
-
                 with open(country_data_filename, 'w', encoding='utf8') as country_data_file:
                     definitions.create_gnuplot_data(country_data, country_data_file)
+
+print ('Dumping all countries data to ', definitions.countries_data_json_filename)
+with open(definitions.countries_data_json_filename, 'w', encoding='utf8') as all_countries_data_file:
+    json.dump(country_data, all_countries_data_file, indent=4)

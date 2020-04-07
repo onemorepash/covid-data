@@ -21,6 +21,8 @@ wmeter_user_agent                  =    'Mozilla/5.0 (Macintosh; Intel Mac OS X 
 
 data_dir                           =    '../../data/worldmeters.info/'
 countries_list_json_filename       =    data_dir + 'worldmeters_countries.json'
+countries_data_json_filename       =    data_dir + 'all_countries_data.json'
+
 countries_datafiles_extention      =    '.txt'
 
 default_year                       =    '2020'
