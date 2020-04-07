@@ -67,7 +67,8 @@ def get_country_data_cumulative_linear(tree):
     # Iterate through dates and number of cases
     # and create a dictionaty { date : { 'cases': value } }
     if data:
-        for date, value in zip(data['xAxis']['categories'], data['series'][0]['data']):
+        for dd, value in zip(data['xAxis']['categories'], data['series'][0]['data']):
+            date = str(datetime.strptime(default_year + ' ' + dd, '%Y %b %d').date())
             if date not in res:
                 res[date] = {}
             res[date]['cases'] = value
@@ -79,7 +80,8 @@ def get_country_data_cumulative_linear(tree):
     # Iterate through dates and number of deaths
     # and create a dictionaty { date : { 'deaths': value } }
     if data:
-        for date, value in zip(data['xAxis']['categories'], data['series'][0]['data']):
+        for dd, value in zip(data['xAxis']['categories'], data['series'][0]['data']):
+            date = str(datetime.strptime(default_year + ' ' + dd, '%Y %b %d').date())
             if date not in res:
                 res[date] = {}
             res[date]['deaths'] = value
@@ -118,8 +120,7 @@ def create_gnuplot_data(country_data, datafile):
         if 'deaths' in values.keys() and values['deaths']:
             deaths_cur  = values['deaths']
 
-        # Convert date stamp to a date object and add a placeholder
-        date_object     = datetime.strptime(default_year + ' ' + date, '%Y %b %d').date()
+        # Placeholder for date
         format_string  += '{:10},'
 
         # Placeholder for cases_cur
@@ -150,7 +151,7 @@ def create_gnuplot_data(country_data, datafile):
         format_string      += '{:>15},'
 
         format_string      += '\n'
-        out_string  = format_string.format( str(date_object),
+        out_string  = format_string.format( date,
                                             cases_cur,
                                             cases_daily_rate,
                                             cases_daily_inc,
