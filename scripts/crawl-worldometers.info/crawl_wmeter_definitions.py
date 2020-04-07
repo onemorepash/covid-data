@@ -84,7 +84,6 @@ def get_country_data_cumulative_linear(tree):
                 res[date] = {}
             res[date]['deaths'] = value
 
-
     return res
 
 

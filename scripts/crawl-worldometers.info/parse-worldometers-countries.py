@@ -15,7 +15,7 @@ with open(definitions.countries_list_json_filename, encoding='utf8') as countrie
     country_list = json.load(countries_list_json_file)
 
 
-all_countries_data = {}
+all_countries_data = []
 
 for country in country_list:
     request = Request( country['url'], headers={'User-Agent': definitions.wmeter_user_agent} )
@@ -46,14 +46,37 @@ for country in country_list:
 
                 country_data    = definitions.get_country_data_cumulative_linear( html_tree )
 
-                all_countries_data[country['cname']]            = {}
-                all_countries_data[country['cname']]['name']    = country['name']
-                all_countries_data[country['cname']]['data']    = country_data
-
                 country_data_filename = definitions.data_dir + country['cname'] + definitions.countries_datafiles_extention
                 print ('Writing output data to ', country_data_filename)
                 with open(country_data_filename, 'w', encoding='utf8') as country_data_file:
                     definitions.create_gnuplot_data(country_data, country_data_file)
+
+                cur_country                             = {}
+                cur_country['cname']                    = country['cname']
+                cur_country['name']                     = country['name']
+
+                cur_country['data']                     = {}
+                cur_country['data']['total']            = {}
+
+                cur_country['data']['daily_cumulative'] = country_data
+
+                # Get max cases and deaths for current country
+                # if the value doesn't exist, the max is 0
+
+                cur_country['data']['total']['cases']   = 0
+                cur_country['data']['total']['deaths']  = 0
+
+                for date in country_data.values():
+                    if 'cases' in date:
+                        if date['cases'] > cur_country['data']['total']['cases']:
+                            cur_country['data']['total']['cases'] = date['cases']
+                    if 'deaths' in date:
+                        if date['deaths'] > cur_country['data']['total']['deaths']:
+                            cur_country['data']['total']['deaths'] = date['deaths']
+
+                all_countries_data.append(cur_country)
+
+all_countries_data = sorted(all_countries_data, key=lambda x : x['data']['total']['deaths'], reverse=True)
 
 print ('Dumping all countries data to ', definitions.countries_data_json_filename)
 with open(definitions.countries_data_json_filename, 'w', encoding='utf8') as all_countries_data_file:
