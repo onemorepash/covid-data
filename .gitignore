@@ -3,6 +3,8 @@ scripts/**/__pycache__/
 
 *.py[cod]
 
+data/*
+
 plots/*
 !plots/per-country/
 plots/per-country/*
