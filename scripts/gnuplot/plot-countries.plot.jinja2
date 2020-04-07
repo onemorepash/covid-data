@@ -59,7 +59,7 @@ set yrange [0:50]
 
 set format x "%b, %d" timedate
 set format y "%.0f%%"
-set format y2 "%.0s%c"
+set format y2 "%.0f"
 
 set ylabel "Daily growth rate" tc '#808080'
 set y2label "Total cases" tc '#808080'
@@ -98,7 +98,7 @@ plot filename every ::1 u 1:5 w boxes ls 2 axis x1y2 t "Total deaths", \
 # Daily Cases and Deaths
 #
 
-set ylabel "New daily cases\n" tc '#808080'
+set ylabel "New daily cases" tc '#808080'
 set y2label "New daily deaths" tc '#808080'
 
 set key top left opaque tc '#808080'
@@ -109,7 +109,7 @@ unset y2range
 set  yrange[:NCD_mean +3*NCD_stddev]
 set y2range[:NDD_mean+3*NDD_stddev]
 
-set format y  "%.0s%c"
+set format y  "%.0f"
 set format y2 "%.0f"
 
 set  ytics nomirror out autofreq
@@ -126,13 +126,13 @@ plot  filename every ::1 u 1:4 w points ls 1 lw 3 axis x1y1 notitle, \
 # Deaths over Cases
 
 unset xdata
-set format x "%.0s%c"
-set format y "%.0s%c"
+set format x "%.0f"
+set format y "%.0f"
 unset xrange
 unset yrange
 set yrange [0:]
 
-set ylabel "Deaths\n" tc '#808080'
+set ylabel "Deaths" tc '#808080'
 set xlabel "Cases" tc '#808080'
 unset y2label
 
