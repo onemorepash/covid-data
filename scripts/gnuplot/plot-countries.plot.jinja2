@@ -61,8 +61,8 @@ set format x "%b, %d" timedate
 set format y "%.0f%%"
 set format y2 "%.0s%c"
 
-set ylabel "Daily growth rate\n\n" tc '#808080'
-set y2label "Total deaths" tc '#808080'
+set ylabel "Daily growth rate" tc '#808080'
+set y2label "Total cases" tc '#808080'
 
 set ytics nomirror out 10
 set mytics 2
@@ -81,6 +81,9 @@ plot filename every ::1 u 1:2 w boxes ls 1 axis x1y2 t "Total cases", \
 #
 # Deaths total and deaths daily rate
 #
+
+set ylabel "Daily growth rate" tc '#808080'
+set y2label "Total deaths" tc '#808080'
 
 set y2tics nomirror out autofreq
 
