@@ -6,5 +6,5 @@ scripts/**/__pycache__/
 data/worldmeters.info/*
 
 plots/*
-!plots/per-country/
+!plots/per-country
 plots/per-country/*
