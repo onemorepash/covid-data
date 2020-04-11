@@ -25,14 +25,14 @@
         "url": "https://www.worldometers.info/coronavirus/country/germany/"
     },
     {
-        "cname": "iran",
-        "name": "Iran",
-        "url": "https://www.worldometers.info/coronavirus/country/iran/"
-    },
-    {
         "cname": "uk",
         "name": "UK",
         "url": "https://www.worldometers.info/coronavirus/country/uk/"
+    },
+    {
+        "cname": "iran",
+        "name": "Iran",
+        "url": "https://www.worldometers.info/coronavirus/country/iran/"
     },
     {
         "cname": "turkey",
@@ -40,14 +40,14 @@
         "url": "https://www.worldometers.info/coronavirus/country/turkey/"
     },
     {
-        "cname": "switzerland",
-        "name": "Switzerland",
-        "url": "https://www.worldometers.info/coronavirus/country/switzerland/"
-    },
-    {
         "cname": "belgium",
         "name": "Belgium",
         "url": "https://www.worldometers.info/coronavirus/country/belgium/"
+    },
+    {
+        "cname": "switzerland",
+        "name": "Switzerland",
+        "url": "https://www.worldometers.info/coronavirus/country/switzerland/"
     },
     {
         "cname": "netherlands",
@@ -60,11 +60,6 @@
         "url": "https://www.worldometers.info/coronavirus/country/canada/"
     },
     {
-        "cname": "austria",
-        "name": "Austria",
-        "url": "https://www.worldometers.info/coronavirus/country/austria/"
-    },
-    {
         "cname": "brazil",
         "name": "Brazil",
         "url": "https://www.worldometers.info/coronavirus/country/brazil/"
@@ -75,19 +70,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/portugal/"
     },
     {
-        "cname": "south-korea",
-        "name": "S. Korea",
-        "url": "https://www.worldometers.info/coronavirus/country/south-korea/"
-    },
-    {
-        "cname": "israel",
-        "name": "Israel",
-        "url": "https://www.worldometers.info/coronavirus/country/israel/"
-    },
-    {
-        "cname": "sweden",
-        "name": "Sweden",
-        "url": "https://www.worldometers.info/coronavirus/country/sweden/"
+        "cname": "austria",
+        "name": "Austria",
+        "url": "https://www.worldometers.info/coronavirus/country/austria/"
     },
     {
         "cname": "russia",
@@ -95,14 +80,19 @@
         "url": "https://www.worldometers.info/coronavirus/country/russia/"
     },
     {
-        "cname": "australia",
-        "name": "Australia",
-        "url": "https://www.worldometers.info/coronavirus/country/australia/"
+        "cname": "israel",
+        "name": "Israel",
+        "url": "https://www.worldometers.info/coronavirus/country/israel/"
     },
     {
-        "cname": "norway",
-        "name": "Norway",
-        "url": "https://www.worldometers.info/coronavirus/country/norway/"
+        "cname": "south-korea",
+        "name": "S. Korea",
+        "url": "https://www.worldometers.info/coronavirus/country/south-korea/"
+    },
+    {
+        "cname": "sweden",
+        "name": "Sweden",
+        "url": "https://www.worldometers.info/coronavirus/country/sweden/"
     },
     {
         "cname": "ireland",
@@ -115,19 +105,24 @@
         "url": "https://www.worldometers.info/coronavirus/country/india/"
     },
     {
+        "cname": "ecuador",
+        "name": "Ecuador",
+        "url": "https://www.worldometers.info/coronavirus/country/ecuador/"
+    },
+    {
         "cname": "chile",
         "name": "Chile",
         "url": "https://www.worldometers.info/coronavirus/country/chile/"
     },
     {
-        "cname": "denmark",
-        "name": "Denmark",
-        "url": "https://www.worldometers.info/coronavirus/country/denmark/"
+        "cname": "peru",
+        "name": "Peru",
+        "url": "https://www.worldometers.info/coronavirus/country/peru/"
     },
     {
-        "cname": "czech-republic",
-        "name": "Czechia",
-        "url": "https://www.worldometers.info/coronavirus/country/czech-republic/"
+        "cname": "norway",
+        "name": "Norway",
+        "url": "https://www.worldometers.info/coronavirus/country/norway/"
     },
     {
         "cname": "poland",
@@ -135,9 +130,29 @@
         "url": "https://www.worldometers.info/coronavirus/country/poland/"
     },
     {
+        "cname": "australia",
+        "name": "Australia",
+        "url": "https://www.worldometers.info/coronavirus/country/australia/"
+    },
+    {
+        "cname": "japan",
+        "name": "Japan",
+        "url": "https://www.worldometers.info/coronavirus/country/japan/"
+    },
+    {
+        "cname": "denmark",
+        "name": "Denmark",
+        "url": "https://www.worldometers.info/coronavirus/country/denmark/"
+    },
+    {
         "cname": "romania",
         "name": "Romania",
         "url": "https://www.worldometers.info/coronavirus/country/romania/"
+    },
+    {
+        "cname": "czech-republic",
+        "name": "Czechia",
+        "url": "https://www.worldometers.info/coronavirus/country/czech-republic/"
     },
     {
         "cname": "pakistan",
@@ -150,29 +165,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/malaysia/"
     },
     {
-        "cname": "japan",
-        "name": "Japan",
-        "url": "https://www.worldometers.info/coronavirus/country/japan/"
-    },
-    {
         "cname": "philippines",
         "name": "Philippines",
         "url": "https://www.worldometers.info/coronavirus/country/philippines/"
-    },
-    {
-        "cname": "ecuador",
-        "name": "Ecuador",
-        "url": "https://www.worldometers.info/coronavirus/country/ecuador/"
-    },
-    {
-        "cname": "luxembourg",
-        "name": "Luxembourg",
-        "url": "https://www.worldometers.info/coronavirus/country/luxembourg/"
-    },
-    {
-        "cname": "peru",
-        "name": "Peru",
-        "url": "https://www.worldometers.info/coronavirus/country/peru/"
     },
     {
         "cname": "saudi-arabia",
@@ -180,19 +175,14 @@
         "url": "https://www.worldometers.info/coronavirus/country/saudi-arabia/"
     },
     {
-        "cname": "indonesia",
-        "name": "Indonesia",
-        "url": "https://www.worldometers.info/coronavirus/country/indonesia/"
-    },
-    {
-        "cname": "serbia",
-        "name": "Serbia",
-        "url": "https://www.worldometers.info/coronavirus/country/serbia/"
-    },
-    {
         "cname": "mexico",
         "name": "Mexico",
         "url": "https://www.worldometers.info/coronavirus/country/mexico/"
+    },
+    {
+        "cname": "indonesia",
+        "name": "Indonesia",
+        "url": "https://www.worldometers.info/coronavirus/country/indonesia/"
     },
     {
         "cname": "united-arab-emirates",
@@ -200,14 +190,14 @@
         "url": "https://www.worldometers.info/coronavirus/country/united-arab-emirates/"
     },
     {
-        "cname": "finland",
-        "name": "Finland",
-        "url": "https://www.worldometers.info/coronavirus/country/finland/"
+        "cname": "serbia",
+        "name": "Serbia",
+        "url": "https://www.worldometers.info/coronavirus/country/serbia/"
     },
     {
-        "cname": "thailand",
-        "name": "Thailand",
-        "url": "https://www.worldometers.info/coronavirus/country/thailand/"
+        "cname": "luxembourg",
+        "name": "Luxembourg",
+        "url": "https://www.worldometers.info/coronavirus/country/luxembourg/"
     },
     {
         "cname": "panama",
@@ -215,14 +205,44 @@
         "url": "https://www.worldometers.info/coronavirus/country/panama/"
     },
     {
-        "cname": "qatar",
-        "name": "Qatar",
-        "url": "https://www.worldometers.info/coronavirus/country/qatar/"
+        "cname": "finland",
+        "name": "Finland",
+        "url": "https://www.worldometers.info/coronavirus/country/finland/"
     },
     {
         "cname": "dominican-republic",
         "name": "Dominican Republic",
         "url": "https://www.worldometers.info/coronavirus/country/dominican-republic/"
+    },
+    {
+        "cname": "qatar",
+        "name": "Qatar",
+        "url": "https://www.worldometers.info/coronavirus/country/qatar/"
+    },
+    {
+        "cname": "thailand",
+        "name": "Thailand",
+        "url": "https://www.worldometers.info/coronavirus/country/thailand/"
+    },
+    {
+        "cname": "ukraine",
+        "name": "Ukraine",
+        "url": "https://www.worldometers.info/coronavirus/country/ukraine/"
+    },
+    {
+        "cname": "colombia",
+        "name": "Colombia",
+        "url": "https://www.worldometers.info/coronavirus/country/colombia/"
+    },
+    {
+        "cname": "singapore",
+        "name": "Singapore",
+        "url": "https://www.worldometers.info/coronavirus/country/singapore/"
+    },
+    {
+        "cname": "belarus",
+        "name": "Belarus",
+        "url": "https://www.worldometers.info/coronavirus/country/belarus/"
     },
     {
         "cname": "greece",
@@ -240,19 +260,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/argentina/"
     },
     {
-        "cname": "iceland",
-        "name": "Iceland",
-        "url": "https://www.worldometers.info/coronavirus/country/iceland/"
-    },
-    {
-        "cname": "colombia",
-        "name": "Colombia",
-        "url": "https://www.worldometers.info/coronavirus/country/colombia/"
-    },
-    {
-        "cname": "singapore",
-        "name": "Singapore",
-        "url": "https://www.worldometers.info/coronavirus/country/singapore/"
+        "cname": "egypt",
+        "name": "Egypt",
+        "url": "https://www.worldometers.info/coronavirus/country/egypt/"
     },
     {
         "cname": "algeria",
@@ -260,44 +270,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/algeria/"
     },
     {
-        "cname": "ukraine",
-        "name": "Ukraine",
-        "url": "https://www.worldometers.info/coronavirus/country/ukraine/"
-    },
-    {
-        "cname": "egypt",
-        "name": "Egypt",
-        "url": "https://www.worldometers.info/coronavirus/country/egypt/"
-    },
-    {
-        "cname": "croatia",
-        "name": "Croatia",
-        "url": "https://www.worldometers.info/coronavirus/country/croatia/"
-    },
-    {
-        "cname": "morocco",
-        "name": "Morocco",
-        "url": "https://www.worldometers.info/coronavirus/country/morocco/"
-    },
-    {
-        "cname": "new-zealand",
-        "name": "New Zealand",
-        "url": "https://www.worldometers.info/coronavirus/country/new-zealand/"
-    },
-    {
-        "cname": "estonia",
-        "name": "Estonia",
-        "url": "https://www.worldometers.info/coronavirus/country/estonia/"
-    },
-    {
-        "cname": "iraq",
-        "name": "Iraq",
-        "url": "https://www.worldometers.info/coronavirus/country/iraq/"
-    },
-    {
-        "cname": "slovenia",
-        "name": "Slovenia",
-        "url": "https://www.worldometers.info/coronavirus/country/slovenia/"
+        "cname": "iceland",
+        "name": "Iceland",
+        "url": "https://www.worldometers.info/coronavirus/country/iceland/"
     },
     {
         "cname": "moldova",
@@ -305,24 +280,24 @@
         "url": "https://www.worldometers.info/coronavirus/country/moldova/"
     },
     {
-        "cname": "china-hong-kong-sar",
-        "name": "Hong Kong",
-        "url": "https://www.worldometers.info/coronavirus/country/china-hong-kong-sar/"
+        "cname": "morocco",
+        "name": "Morocco",
+        "url": "https://www.worldometers.info/coronavirus/country/morocco/"
     },
     {
-        "cname": "lithuania",
-        "name": "Lithuania",
-        "url": "https://www.worldometers.info/coronavirus/country/lithuania/"
+        "cname": "croatia",
+        "name": "Croatia",
+        "url": "https://www.worldometers.info/coronavirus/country/croatia/"
     },
     {
-        "cname": "belarus",
-        "name": "Belarus",
-        "url": "https://www.worldometers.info/coronavirus/country/belarus/"
+        "cname": "iraq",
+        "name": "Iraq",
+        "url": "https://www.worldometers.info/coronavirus/country/iraq/"
     },
     {
-        "cname": "armenia",
-        "name": "Armenia",
-        "url": "https://www.worldometers.info/coronavirus/country/armenia/"
+        "cname": "new-zealand",
+        "name": "New Zealand",
+        "url": "https://www.worldometers.info/coronavirus/country/new-zealand/"
     },
     {
         "cname": "hungary",
@@ -330,14 +305,14 @@
         "url": "https://www.worldometers.info/coronavirus/country/hungary/"
     },
     {
-        "cname": "bahrain",
-        "name": "Bahrain",
-        "url": "https://www.worldometers.info/coronavirus/country/bahrain/"
+        "cname": "estonia",
+        "name": "Estonia",
+        "url": "https://www.worldometers.info/coronavirus/country/estonia/"
     },
     {
-        "cname": "bosnia-and-herzegovina",
-        "name": "Bosnia and Herzegovina",
-        "url": "https://www.worldometers.info/coronavirus/country/bosnia-and-herzegovina/"
+        "cname": "slovenia",
+        "name": "Slovenia",
+        "url": "https://www.worldometers.info/coronavirus/country/slovenia/"
     },
     {
         "cname": "kuwait",
@@ -350,6 +325,31 @@
         "url": "https://www.worldometers.info/coronavirus/country/azerbaijan/"
     },
     {
+        "cname": "bahrain",
+        "name": "Bahrain",
+        "url": "https://www.worldometers.info/coronavirus/country/bahrain/"
+    },
+    {
+        "cname": "lithuania",
+        "name": "Lithuania",
+        "url": "https://www.worldometers.info/coronavirus/country/lithuania/"
+    },
+    {
+        "cname": "china-hong-kong-sar",
+        "name": "Hong Kong",
+        "url": "https://www.worldometers.info/coronavirus/country/china-hong-kong-sar/"
+    },
+    {
+        "cname": "armenia",
+        "name": "Armenia",
+        "url": "https://www.worldometers.info/coronavirus/country/armenia/"
+    },
+    {
+        "cname": "bosnia-and-herzegovina",
+        "name": "Bosnia and Herzegovina",
+        "url": "https://www.worldometers.info/coronavirus/country/bosnia-and-herzegovina/"
+    },
+    {
         "cname": "kazakhstan",
         "name": "Kazakhstan",
         "url": "https://www.worldometers.info/coronavirus/country/kazakhstan/"
@@ -360,9 +360,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/cameroon/"
     },
     {
-        "cname": "tunisia",
-        "name": "Tunisia",
-        "url": "https://www.worldometers.info/coronavirus/country/tunisia/"
+        "cname": "uzbekistan",
+        "name": "Uzbekistan",
+        "url": "https://www.worldometers.info/coronavirus/country/uzbekistan/"
     },
     {
         "cname": "macedonia",
@@ -375,14 +375,14 @@
         "url": "https://www.worldometers.info/coronavirus/country/slovakia/"
     },
     {
+        "cname": "tunisia",
+        "name": "Tunisia",
+        "url": "https://www.worldometers.info/coronavirus/country/tunisia/"
+    },
+    {
         "cname": "bulgaria",
         "name": "Bulgaria",
         "url": "https://www.worldometers.info/coronavirus/country/bulgaria/"
-    },
-    {
-        "cname": "lebanon",
-        "name": "Lebanon",
-        "url": "https://www.worldometers.info/coronavirus/country/lebanon/"
     },
     {
         "cname": "latvia",
@@ -390,19 +390,24 @@
         "url": "https://www.worldometers.info/coronavirus/country/latvia/"
     },
     {
-        "cname": "andorra",
-        "name": "Andorra",
-        "url": "https://www.worldometers.info/coronavirus/country/andorra/"
+        "cname": "cuba",
+        "name": "Cuba",
+        "url": "https://www.worldometers.info/coronavirus/country/cuba/"
     },
     {
-        "cname": "uzbekistan",
-        "name": "Uzbekistan",
-        "url": "https://www.worldometers.info/coronavirus/country/uzbekistan/"
+        "cname": "lebanon",
+        "name": "Lebanon",
+        "url": "https://www.worldometers.info/coronavirus/country/lebanon/"
     },
     {
         "cname": "cyprus",
         "name": "Cyprus",
         "url": "https://www.worldometers.info/coronavirus/country/cyprus/"
+    },
+    {
+        "cname": "andorra",
+        "name": "Andorra",
+        "url": "https://www.worldometers.info/coronavirus/country/andorra/"
     },
     {
         "cname": "costa-rica",
@@ -415,49 +420,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/afghanistan/"
     },
     {
-        "cname": "uruguay",
-        "name": "Uruguay",
-        "url": "https://www.worldometers.info/coronavirus/country/uruguay/"
-    },
-    {
-        "cname": "cuba",
-        "name": "Cuba",
-        "url": "https://www.worldometers.info/coronavirus/country/cuba/"
-    },
-    {
-        "cname": "albania",
-        "name": "Albania",
-        "url": "https://www.worldometers.info/coronavirus/country/albania/"
-    },
-    {
-        "cname": "taiwan",
-        "name": "Taiwan",
-        "url": "https://www.worldometers.info/coronavirus/country/taiwan/"
-    },
-    {
         "cname": "oman",
         "name": "Oman",
         "url": "https://www.worldometers.info/coronavirus/country/oman/"
-    },
-    {
-        "cname": "burkina-faso",
-        "name": "Burkina Faso",
-        "url": "https://www.worldometers.info/coronavirus/country/burkina-faso/"
-    },
-    {
-        "cname": "jordan",
-        "name": "Jordan",
-        "url": "https://www.worldometers.info/coronavirus/country/jordan/"
-    },
-    {
-        "cname": "reunion",
-        "name": "R\u00e9union",
-        "url": "https://www.worldometers.info/coronavirus/country/reunion/"
-    },
-    {
-        "cname": "channel-islands",
-        "name": "Channel Islands",
-        "url": "https://www.worldometers.info/coronavirus/country/channel-islands/"
     },
     {
         "cname": "cote-d-ivoire",
@@ -465,34 +430,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/cote-d-ivoire/"
     },
     {
-        "cname": "honduras",
-        "name": "Honduras",
-        "url": "https://www.worldometers.info/coronavirus/country/honduras/"
-    },
-    {
-        "cname": "malta",
-        "name": "Malta",
-        "url": "https://www.worldometers.info/coronavirus/country/malta/"
-    },
-    {
-        "cname": "ghana",
-        "name": "Ghana",
-        "url": "https://www.worldometers.info/coronavirus/country/ghana/"
-    },
-    {
-        "cname": "san-marino",
-        "name": "San Marino",
-        "url": "https://www.worldometers.info/coronavirus/country/san-marino/"
-    },
-    {
-        "cname": "mauritius",
-        "name": "Mauritius",
-        "url": "https://www.worldometers.info/coronavirus/country/mauritius/"
-    },
-    {
-        "cname": "state-of-palestine",
-        "name": "Palestine",
-        "url": "https://www.worldometers.info/coronavirus/country/state-of-palestine/"
+        "cname": "uruguay",
+        "name": "Uruguay",
+        "url": "https://www.worldometers.info/coronavirus/country/uruguay/"
     },
     {
         "cname": "niger",
@@ -500,14 +440,69 @@
         "url": "https://www.worldometers.info/coronavirus/country/niger/"
     },
     {
-        "cname": "viet-nam",
-        "name": "Vietnam",
-        "url": "https://www.worldometers.info/coronavirus/country/viet-nam/"
+        "cname": "burkina-faso",
+        "name": "Burkina Faso",
+        "url": "https://www.worldometers.info/coronavirus/country/burkina-faso/"
     },
     {
-        "cname": "montenegro",
-        "name": "Montenegro",
-        "url": "https://www.worldometers.info/coronavirus/country/montenegro/"
+        "cname": "bangladesh",
+        "name": "Bangladesh",
+        "url": "https://www.worldometers.info/coronavirus/country/bangladesh/"
+    },
+    {
+        "cname": "albania",
+        "name": "Albania",
+        "url": "https://www.worldometers.info/coronavirus/country/albania/"
+    },
+    {
+        "cname": "ghana",
+        "name": "Ghana",
+        "url": "https://www.worldometers.info/coronavirus/country/ghana/"
+    },
+    {
+        "cname": "channel-islands",
+        "name": "Channel Islands",
+        "url": "https://www.worldometers.info/coronavirus/country/channel-islands/"
+    },
+    {
+        "cname": "honduras",
+        "name": "Honduras",
+        "url": "https://www.worldometers.info/coronavirus/country/honduras/"
+    },
+    {
+        "cname": "reunion",
+        "name": "R\u00e9union",
+        "url": "https://www.worldometers.info/coronavirus/country/reunion/"
+    },
+    {
+        "cname": "taiwan",
+        "name": "Taiwan",
+        "url": "https://www.worldometers.info/coronavirus/country/taiwan/"
+    },
+    {
+        "cname": "jordan",
+        "name": "Jordan",
+        "url": "https://www.worldometers.info/coronavirus/country/jordan/"
+    },
+    {
+        "cname": "malta",
+        "name": "Malta",
+        "url": "https://www.worldometers.info/coronavirus/country/malta/"
+    },
+    {
+        "cname": "san-marino",
+        "name": "San Marino",
+        "url": "https://www.worldometers.info/coronavirus/country/san-marino/"
+    },
+    {
+        "cname": "kyrgyzstan",
+        "name": "Kyrgyzstan",
+        "url": "https://www.worldometers.info/coronavirus/country/kyrgyzstan/"
+    },
+    {
+        "cname": "mauritius",
+        "name": "Mauritius",
+        "url": "https://www.worldometers.info/coronavirus/country/mauritius/"
     },
     {
         "cname": "nigeria",
@@ -520,74 +515,24 @@
         "url": "https://www.worldometers.info/coronavirus/country/senegal/"
     },
     {
-        "cname": "kyrgyzstan",
-        "name": "Kyrgyzstan",
-        "url": "https://www.worldometers.info/coronavirus/country/kyrgyzstan/"
-    },
-    {
-        "cname": "georgia",
-        "name": "Georgia",
-        "url": "https://www.worldometers.info/coronavirus/country/georgia/"
-    },
-    {
         "cname": "bolivia",
         "name": "Bolivia",
         "url": "https://www.worldometers.info/coronavirus/country/bolivia/"
     },
     {
-        "cname": "sri-lanka",
-        "name": "Sri Lanka",
-        "url": "https://www.worldometers.info/coronavirus/country/sri-lanka/"
+        "cname": "state-of-palestine",
+        "name": "Palestine",
+        "url": "https://www.worldometers.info/coronavirus/country/state-of-palestine/"
     },
     {
-        "cname": "faeroe-islands",
-        "name": "Faeroe Islands",
-        "url": "https://www.worldometers.info/coronavirus/country/faeroe-islands/"
+        "cname": "montenegro",
+        "name": "Montenegro",
+        "url": "https://www.worldometers.info/coronavirus/country/montenegro/"
     },
     {
-        "cname": "kenya",
-        "name": "Kenya",
-        "url": "https://www.worldometers.info/coronavirus/country/kenya/"
-    },
-    {
-        "cname": "venezuela",
-        "name": "Venezuela",
-        "url": "https://www.worldometers.info/coronavirus/country/venezuela/"
-    },
-    {
-        "cname": "bangladesh",
-        "name": "Bangladesh",
-        "url": "https://www.worldometers.info/coronavirus/country/bangladesh/"
-    },
-    {
-        "cname": "mayotte",
-        "name": "Mayotte",
-        "url": "https://www.worldometers.info/coronavirus/country/mayotte/"
-    },
-    {
-        "cname": "democratic-republic-of-the-congo",
-        "name": "DRC",
-        "url": "https://www.worldometers.info/coronavirus/country/democratic-republic-of-the-congo/"
-    },
-    {
-        "cname": "martinique",
-        "name": "Martinique",
-        "url": "https://www.worldometers.info/coronavirus/country/martinique/"
-    },
-    {
-        "cname": "isle-of-man",
-        "name": "Isle of Man",
-        "url": "https://www.worldometers.info/coronavirus/country/isle-of-man/"
-    },
-    {
-        "cname": "guadeloupe",
-        "name": "Guadeloupe",
-        "url": "https://www.worldometers.info/coronavirus/country/guadeloupe/"
-    },
-    {
-        "cname": "brunei-darussalam",
-        "name": "Brunei ",
-        "url": "https://www.worldometers.info/coronavirus/country/brunei-darussalam/"
+        "cname": "viet-nam",
+        "name": "Vietnam",
+        "url": "https://www.worldometers.info/coronavirus/country/viet-nam/"
     },
     {
         "cname": "guinea",
@@ -595,14 +540,74 @@
         "url": "https://www.worldometers.info/coronavirus/country/guinea/"
     },
     {
+        "cname": "georgia",
+        "name": "Georgia",
+        "url": "https://www.worldometers.info/coronavirus/country/georgia/"
+    },
+    {
+        "cname": "isle-of-man",
+        "name": "Isle of Man",
+        "url": "https://www.worldometers.info/coronavirus/country/isle-of-man/"
+    },
+    {
+        "cname": "democratic-republic-of-the-congo",
+        "name": "DRC",
+        "url": "https://www.worldometers.info/coronavirus/country/democratic-republic-of-the-congo/"
+    },
+    {
+        "cname": "sri-lanka",
+        "name": "Sri Lanka",
+        "url": "https://www.worldometers.info/coronavirus/country/sri-lanka/"
+    },
+    {
+        "cname": "mayotte",
+        "name": "Mayotte",
+        "url": "https://www.worldometers.info/coronavirus/country/mayotte/"
+    },
+    {
+        "cname": "kenya",
+        "name": "Kenya",
+        "url": "https://www.worldometers.info/coronavirus/country/kenya/"
+    },
+    {
+        "cname": "djibouti",
+        "name": "Djibouti",
+        "url": "https://www.worldometers.info/coronavirus/country/djibouti/"
+    },
+    {
+        "cname": "faeroe-islands",
+        "name": "Faeroe Islands",
+        "url": "https://www.worldometers.info/coronavirus/country/faeroe-islands/"
+    },
+    {
+        "cname": "venezuela",
+        "name": "Venezuela",
+        "url": "https://www.worldometers.info/coronavirus/country/venezuela/"
+    },
+    {
+        "cname": "martinique",
+        "name": "Martinique",
+        "url": "https://www.worldometers.info/coronavirus/country/martinique/"
+    },
+    {
+        "cname": "guadeloupe",
+        "name": "Guadeloupe",
+        "url": "https://www.worldometers.info/coronavirus/country/guadeloupe/"
+    },
+    {
+        "cname": "guatemala",
+        "name": "Guatemala",
+        "url": "https://www.worldometers.info/coronavirus/country/guatemala/"
+    },
+    {
+        "cname": "brunei-darussalam",
+        "name": "Brunei ",
+        "url": "https://www.worldometers.info/coronavirus/country/brunei-darussalam/"
+    },
+    {
         "cname": "paraguay",
         "name": "Paraguay",
         "url": "https://www.worldometers.info/coronavirus/country/paraguay/"
-    },
-    {
-        "cname": "cambodia",
-        "name": "Cambodia",
-        "url": "https://www.worldometers.info/coronavirus/country/cambodia/"
     },
     {
         "cname": "gibraltar",
@@ -610,9 +615,14 @@
         "url": "https://www.worldometers.info/coronavirus/country/gibraltar/"
     },
     {
-        "cname": "trinidad-and-tobago",
-        "name": "Trinidad and Tobago",
-        "url": "https://www.worldometers.info/coronavirus/country/trinidad-and-tobago/"
+        "cname": "cambodia",
+        "name": "Cambodia",
+        "url": "https://www.worldometers.info/coronavirus/country/cambodia/"
+    },
+    {
+        "cname": "el-salvador",
+        "name": "El Salvador",
+        "url": "https://www.worldometers.info/coronavirus/country/el-salvador/"
     },
     {
         "cname": "rwanda",
@@ -620,9 +630,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/rwanda/"
     },
     {
-        "cname": "djibouti",
-        "name": "Djibouti",
-        "url": "https://www.worldometers.info/coronavirus/country/djibouti/"
+        "cname": "trinidad-and-tobago",
+        "name": "Trinidad and Tobago",
+        "url": "https://www.worldometers.info/coronavirus/country/trinidad-and-tobago/"
     },
     {
         "cname": "madagascar",
@@ -635,24 +645,14 @@
         "url": "https://www.worldometers.info/coronavirus/country/monaco/"
     },
     {
-        "cname": "el-salvador",
-        "name": "El Salvador",
-        "url": "https://www.worldometers.info/coronavirus/country/el-salvador/"
-    },
-    {
-        "cname": "guatemala",
-        "name": "Guatemala",
-        "url": "https://www.worldometers.info/coronavirus/country/guatemala/"
-    },
-    {
-        "cname": "liechtenstein",
-        "name": "Liechtenstein",
-        "url": "https://www.worldometers.info/coronavirus/country/liechtenstein/"
-    },
-    {
         "cname": "aruba",
         "name": "Aruba",
         "url": "https://www.worldometers.info/coronavirus/country/aruba/"
+    },
+    {
+        "cname": "mali",
+        "name": "Mali",
+        "url": "https://www.worldometers.info/coronavirus/country/mali/"
     },
     {
         "cname": "french-guiana",
@@ -660,9 +660,19 @@
         "url": "https://www.worldometers.info/coronavirus/country/french-guiana/"
     },
     {
+        "cname": "liechtenstein",
+        "name": "Liechtenstein",
+        "url": "https://www.worldometers.info/coronavirus/country/liechtenstein/"
+    },
+    {
         "cname": "togo",
         "name": "Togo",
         "url": "https://www.worldometers.info/coronavirus/country/togo/"
+    },
+    {
+        "cname": "ethiopia",
+        "name": "Ethiopia",
+        "url": "https://www.worldometers.info/coronavirus/country/ethiopia/"
     },
     {
         "cname": "barbados",
@@ -675,14 +685,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/jamaica/"
     },
     {
-        "cname": "mali",
-        "name": "Mali",
-        "url": "https://www.worldometers.info/coronavirus/country/mali/"
-    },
-    {
-        "cname": "ethiopia",
-        "name": "Ethiopia",
-        "url": "https://www.worldometers.info/coronavirus/country/ethiopia/"
+        "cname": "congo",
+        "name": "Congo",
+        "url": "https://www.worldometers.info/coronavirus/country/congo/"
     },
     {
         "cname": "uganda",
@@ -695,19 +700,14 @@
         "url": "https://www.worldometers.info/coronavirus/country/french-polynesia/"
     },
     {
-        "cname": "congo",
-        "name": "Congo",
-        "url": "https://www.worldometers.info/coronavirus/country/congo/"
-    },
-    {
-        "cname": "china-macao-sar",
-        "name": "Macao",
-        "url": "https://www.worldometers.info/coronavirus/country/china-macao-sar/"
-    },
-    {
         "cname": "sint-maarten",
         "name": "Sint Maarten",
         "url": "https://www.worldometers.info/coronavirus/country/sint-maarten/"
+    },
+    {
+        "cname": "liberia",
+        "name": "Liberia",
+        "url": "https://www.worldometers.info/coronavirus/country/liberia/"
     },
     {
         "cname": "bermuda",
@@ -715,14 +715,19 @@
         "url": "https://www.worldometers.info/coronavirus/country/bermuda/"
     },
     {
+        "cname": "gabon",
+        "name": "Gabon",
+        "url": "https://www.worldometers.info/coronavirus/country/gabon/"
+    },
+    {
         "cname": "cayman-islands",
         "name": "Cayman Islands",
         "url": "https://www.worldometers.info/coronavirus/country/cayman-islands/"
     },
     {
-        "cname": "zambia",
-        "name": "Zambia",
-        "url": "https://www.worldometers.info/coronavirus/country/zambia/"
+        "cname": "china-macao-sar",
+        "name": "Macao",
+        "url": "https://www.worldometers.info/coronavirus/country/china-macao-sar/"
     },
     {
         "cname": "bahamas",
@@ -730,34 +735,34 @@
         "url": "https://www.worldometers.info/coronavirus/country/bahamas/"
     },
     {
-        "cname": "guinea-bissau",
-        "name": "Guinea-Bissau",
-        "url": "https://www.worldometers.info/coronavirus/country/guinea-bissau/"
-    },
-    {
-        "cname": "saint-martin",
-        "name": "Saint Martin",
-        "url": "https://www.worldometers.info/coronavirus/country/saint-martin/"
-    },
-    {
         "cname": "guyana",
         "name": "Guyana",
         "url": "https://www.worldometers.info/coronavirus/country/guyana/"
     },
     {
-        "cname": "eritrea",
-        "name": "Eritrea",
-        "url": "https://www.worldometers.info/coronavirus/country/eritrea/"
+        "cname": "zambia",
+        "name": "Zambia",
+        "url": "https://www.worldometers.info/coronavirus/country/zambia/"
     },
     {
-        "cname": "gabon",
-        "name": "Gabon",
-        "url": "https://www.worldometers.info/coronavirus/country/gabon/"
+        "cname": "myanmar",
+        "name": "Myanmar",
+        "url": "https://www.worldometers.info/coronavirus/country/myanmar/"
+    },
+    {
+        "cname": "guinea-bissau",
+        "name": "Guinea-Bissau",
+        "url": "https://www.worldometers.info/coronavirus/country/guinea-bissau/"
     },
     {
         "cname": "benin",
         "name": "Benin",
         "url": "https://www.worldometers.info/coronavirus/country/benin/"
+    },
+    {
+        "cname": "eritrea",
+        "name": "Eritrea",
+        "url": "https://www.worldometers.info/coronavirus/country/eritrea/"
     },
     {
         "cname": "haiti",
@@ -770,9 +775,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/tanzania/"
     },
     {
-        "cname": "myanmar",
-        "name": "Myanmar",
-        "url": "https://www.worldometers.info/coronavirus/country/myanmar/"
+        "cname": "saint-martin",
+        "name": "Saint Martin",
+        "url": "https://www.worldometers.info/coronavirus/country/saint-martin/"
     },
     {
         "cname": "syria",
@@ -785,14 +790,19 @@
         "url": "https://www.worldometers.info/coronavirus/country/libya/"
     },
     {
-        "cname": "maldives",
-        "name": "Maldives",
-        "url": "https://www.worldometers.info/coronavirus/country/maldives/"
+        "cname": "antigua-and-barbuda",
+        "name": "Antigua and Barbuda",
+        "url": "https://www.worldometers.info/coronavirus/country/antigua-and-barbuda/"
     },
     {
-        "cname": "new-caledonia",
-        "name": "New Caledonia",
-        "url": "https://www.worldometers.info/coronavirus/country/new-caledonia/"
+        "cname": "somalia",
+        "name": "Somalia",
+        "url": "https://www.worldometers.info/coronavirus/country/somalia/"
+    },
+    {
+        "cname": "mozambique",
+        "name": "Mozambique",
+        "url": "https://www.worldometers.info/coronavirus/country/mozambique/"
     },
     {
         "cname": "angola",
@@ -800,19 +810,29 @@
         "url": "https://www.worldometers.info/coronavirus/country/angola/"
     },
     {
+        "cname": "sudan",
+        "name": "Sudan",
+        "url": "https://www.worldometers.info/coronavirus/country/sudan/"
+    },
+    {
+        "cname": "maldives",
+        "name": "Maldives",
+        "url": "https://www.worldometers.info/coronavirus/country/maldives/"
+    },
+    {
         "cname": "equatorial-guinea",
         "name": "Equatorial Guinea",
         "url": "https://www.worldometers.info/coronavirus/country/equatorial-guinea/"
     },
     {
-        "cname": "namibia",
-        "name": "Namibia",
-        "url": "https://www.worldometers.info/coronavirus/country/namibia/"
+        "cname": "laos",
+        "name": "Laos",
+        "url": "https://www.worldometers.info/coronavirus/country/laos/"
     },
     {
-        "cname": "antigua-and-barbuda",
-        "name": "Antigua and Barbuda",
-        "url": "https://www.worldometers.info/coronavirus/country/antigua-and-barbuda/"
+        "cname": "new-caledonia",
+        "name": "New Caledonia",
+        "url": "https://www.worldometers.info/coronavirus/country/new-caledonia/"
     },
     {
         "cname": "dominica",
@@ -830,19 +850,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/mongolia/"
     },
     {
-        "cname": "liberia",
-        "name": "Liberia",
-        "url": "https://www.worldometers.info/coronavirus/country/liberia/"
-    },
-    {
-        "cname": "sudan",
-        "name": "Sudan",
-        "url": "https://www.worldometers.info/coronavirus/country/sudan/"
-    },
-    {
-        "cname": "laos",
-        "name": "Laos",
-        "url": "https://www.worldometers.info/coronavirus/country/laos/"
+        "cname": "namibia",
+        "name": "Namibia",
+        "url": "https://www.worldometers.info/coronavirus/country/namibia/"
     },
     {
         "cname": "saint-lucia",
@@ -860,14 +870,49 @@
         "url": "https://www.worldometers.info/coronavirus/country/grenada/"
     },
     {
-        "cname": "greenland",
-        "name": "Greenland",
-        "url": "https://www.worldometers.info/coronavirus/country/greenland/"
+        "cname": "zimbabwe",
+        "name": "Zimbabwe",
+        "url": "https://www.worldometers.info/coronavirus/country/zimbabwe/"
+    },
+    {
+        "cname": "belize",
+        "name": "Belize",
+        "url": "https://www.worldometers.info/coronavirus/country/belize/"
+    },
+    {
+        "cname": "botswana",
+        "name": "Botswana",
+        "url": "https://www.worldometers.info/coronavirus/country/botswana/"
+    },
+    {
+        "cname": "malawi",
+        "name": "Malawi",
+        "url": "https://www.worldometers.info/coronavirus/country/malawi/"
     },
     {
         "cname": "saint-kitts-and-nevis",
         "name": "Saint Kitts and Nevis",
         "url": "https://www.worldometers.info/coronavirus/country/saint-kitts-and-nevis/"
+    },
+    {
+        "cname": "saint-vincent-and-the-grenadines",
+        "name": "St. Vincent Grenadines",
+        "url": "https://www.worldometers.info/coronavirus/country/saint-vincent-and-the-grenadines/"
+    },
+    {
+        "cname": "swaziland",
+        "name": "Eswatini",
+        "url": "https://www.worldometers.info/coronavirus/country/swaziland/"
+    },
+    {
+        "cname": "chad",
+        "name": "Chad",
+        "url": "https://www.worldometers.info/coronavirus/country/chad/"
+    },
+    {
+        "cname": "greenland",
+        "name": "Greenland",
+        "url": "https://www.worldometers.info/coronavirus/country/greenland/"
     },
     {
         "cname": "seychelles",
@@ -880,24 +925,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/suriname/"
     },
     {
-        "cname": "zimbabwe",
-        "name": "Zimbabwe",
-        "url": "https://www.worldometers.info/coronavirus/country/zimbabwe/"
-    },
-    {
-        "cname": "chad",
-        "name": "Chad",
-        "url": "https://www.worldometers.info/coronavirus/country/chad/"
-    },
-    {
-        "cname": "mozambique",
-        "name": "Mozambique",
-        "url": "https://www.worldometers.info/coronavirus/country/mozambique/"
-    },
-    {
-        "cname": "swaziland",
-        "name": "Eswatini",
-        "url": "https://www.worldometers.info/coronavirus/country/swaziland/"
+        "cname": "gambia",
+        "name": "Gambia",
+        "url": "https://www.worldometers.info/coronavirus/country/gambia/"
     },
     {
         "cname": "nepal",
@@ -905,9 +935,19 @@
         "url": "https://www.worldometers.info/coronavirus/country/nepal/"
     },
     {
-        "cname": "malawi",
-        "name": "Malawi",
-        "url": "https://www.worldometers.info/coronavirus/country/malawi/"
+        "cname": "montserrat",
+        "name": "Montserrat",
+        "url": "https://www.worldometers.info/coronavirus/country/montserrat/"
+    },
+    {
+        "cname": "cabo-verde",
+        "name": "Cabo Verde",
+        "url": "https://www.worldometers.info/coronavirus/country/cabo-verde/"
+    },
+    {
+        "cname": "nicaragua",
+        "name": "Nicaragua",
+        "url": "https://www.worldometers.info/coronavirus/country/nicaragua/"
     },
     {
         "cname": "turks-and-caicos-islands",
@@ -920,54 +960,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/central-african-republic/"
     },
     {
-        "cname": "somalia",
-        "name": "Somalia",
-        "url": "https://www.worldometers.info/coronavirus/country/somalia/"
-    },
-    {
-        "cname": "belize",
-        "name": "Belize",
-        "url": "https://www.worldometers.info/coronavirus/country/belize/"
-    },
-    {
-        "cname": "cabo-verde",
-        "name": "Cabo Verde",
-        "url": "https://www.worldometers.info/coronavirus/country/cabo-verde/"
-    },
-    {
         "cname": "holy-see",
         "name": "Vatican City",
         "url": "https://www.worldometers.info/coronavirus/country/holy-see/"
-    },
-    {
-        "cname": "saint-vincent-and-the-grenadines",
-        "name": "St. Vincent Grenadines",
-        "url": "https://www.worldometers.info/coronavirus/country/saint-vincent-and-the-grenadines/"
-    },
-    {
-        "cname": "botswana",
-        "name": "Botswana",
-        "url": "https://www.worldometers.info/coronavirus/country/botswana/"
-    },
-    {
-        "cname": "mauritania",
-        "name": "Mauritania",
-        "url": "https://www.worldometers.info/coronavirus/country/mauritania/"
-    },
-    {
-        "cname": "nicaragua",
-        "name": "Nicaragua",
-        "url": "https://www.worldometers.info/coronavirus/country/nicaragua/"
-    },
-    {
-        "cname": "montserrat",
-        "name": "Montserrat",
-        "url": "https://www.worldometers.info/coronavirus/country/montserrat/"
-    },
-    {
-        "cname": "saint-barthelemy",
-        "name": "St. Barth",
-        "url": "https://www.worldometers.info/coronavirus/country/saint-barthelemy/"
     },
     {
         "cname": "sierra-leone",
@@ -975,19 +970,39 @@
         "url": "https://www.worldometers.info/coronavirus/country/sierra-leone/"
     },
     {
+        "cname": "mauritania",
+        "name": "Mauritania",
+        "url": "https://www.worldometers.info/coronavirus/country/mauritania/"
+    },
+    {
+        "cname": "saint-barthelemy",
+        "name": "St. Barth",
+        "url": "https://www.worldometers.info/coronavirus/country/saint-barthelemy/"
+    },
+    {
         "cname": "bhutan",
         "name": "Bhutan",
         "url": "https://www.worldometers.info/coronavirus/country/bhutan/"
     },
     {
-        "cname": "gambia",
-        "name": "Gambia",
-        "url": "https://www.worldometers.info/coronavirus/country/gambia/"
+        "cname": "burundi",
+        "name": "Burundi",
+        "url": "https://www.worldometers.info/coronavirus/country/burundi/"
+    },
+    {
+        "cname": "falkland-islands-malvinas",
+        "name": "Falkland Islands",
+        "url": "https://www.worldometers.info/coronavirus/country/falkland-islands-malvinas/"
     },
     {
         "cname": "sao-tome-and-principe",
         "name": "Sao Tome and Principe",
         "url": "https://www.worldometers.info/coronavirus/country/sao-tome-and-principe/"
+    },
+    {
+        "cname": "south-sudan",
+        "name": "South Sudan",
+        "url": "https://www.worldometers.info/coronavirus/country/south-sudan/"
     },
     {
         "cname": "western-sahara",
@@ -1005,19 +1020,9 @@
         "url": "https://www.worldometers.info/coronavirus/country/british-virgin-islands/"
     },
     {
-        "cname": "burundi",
-        "name": "Burundi",
-        "url": "https://www.worldometers.info/coronavirus/country/burundi/"
-    },
-    {
         "cname": "caribbean-netherlands",
         "name": "Caribbean Netherlands",
         "url": "https://www.worldometers.info/coronavirus/country/caribbean-netherlands/"
-    },
-    {
-        "cname": "falkland-islands-malvinas",
-        "name": "Falkland Islands",
-        "url": "https://www.worldometers.info/coronavirus/country/falkland-islands-malvinas/"
     },
     {
         "cname": "papua-new-guinea",
@@ -1025,19 +1030,19 @@
         "url": "https://www.worldometers.info/coronavirus/country/papua-new-guinea/"
     },
     {
+        "cname": "timor-leste",
+        "name": "Timor-Leste",
+        "url": "https://www.worldometers.info/coronavirus/country/timor-leste/"
+    },
+    {
         "cname": "saint-pierre-and-miquelon",
         "name": "Saint Pierre Miquelon",
         "url": "https://www.worldometers.info/coronavirus/country/saint-pierre-and-miquelon/"
     },
     {
-        "cname": "south-sudan",
-        "name": "South Sudan",
-        "url": "https://www.worldometers.info/coronavirus/country/south-sudan/"
-    },
-    {
-        "cname": "timor-leste",
-        "name": "Timor-Leste",
-        "url": "https://www.worldometers.info/coronavirus/country/timor-leste/"
+        "cname": "yemen",
+        "name": "Yemen",
+        "url": "https://www.worldometers.info/coronavirus/country/yemen/"
     },
     {
         "cname": "china",

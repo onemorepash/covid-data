@@ -21,7 +21,6 @@ filename = "../../data/worldmeters.info/{{country_cname}}.txt"
 set timefmt "%Y-%m-%d"
 today_date = strftime("%Y-%m-%d", time(0))
 
-
 stats filename every ::1 u 2   nooutput prefix "CASES"
 stats filename every ::1 u 5   nooutput prefix "DEATHS"
 
@@ -38,6 +37,19 @@ stats filename every ::(CASES_records-6) u 2:5 nooutput prefix "DOCLW"
 stats filename every ::(NCD_records-6) u 4 nooutput prefix "NCDLW"
 stats filename every ::(NCD_records-6) u 7 nooutput prefix "NDDLW"
 
+set xdata time
+
+start_date_index = 1
+start_date       = 0
+
+start_threashold = 100
+
+check_threashold(x, y, row) = ( y >= start_threashold && start_date_index==1 ? (start_date=x, start_date_index=row, y) : y )
+
+set table $DDD
+  plot filename every ::1 using 1:( check_threashold(timecolumn(1), $2, $0) )
+unset table
+
 set grid front
 
 #
@@ -53,7 +65,13 @@ set label 100 "{{country_name}}" center font ",40" at screen 0.5, 0.95 tc '#5050
 #
 
 set xdata time
-set xrange [:today_date]
+
+if ( start_date != 0) {
+  set xrange [start_date:today_date]
+}
+else {
+  set xrange [:today_date]
+}
 
 set yrange [0:50]
 
@@ -68,13 +86,14 @@ set ytics nomirror out 10
 set mytics 2
 set y2tics nomirror out autofreq
 set xtics nomirror out
+set xtics "2020-01-20", 24*3600*7
 set grid mytics
 
 set key top left opaque tc '#707070'
 
-plot filename every ::1 u 1:2 w boxes ls 1 axis x1y2 t "Total cases", \
-     filename every ::1 u 1:(($3-1)*100) w points ls 1 lw 3 axis x1y1  notitle, \
-     filename every ::1 u 1:(($3-1)*100) w l ls 1 dashtype 1 lw 3 s sb axis x1y1 notitle, \
+plot filename every ::start_date_index u 1:2 w boxes ls 1 axis x1y2 t "Total cases", \
+     filename every ::start_date_index u 1:(($3-1)*100) w points ls 1 lw 3 axis x1y1  notitle, \
+     filename every ::start_date_index u 1:(($3-1)*100) w l ls 1 dashtype 1 lw 3 s sb axis x1y1 notitle, \
      NaN w linespoints ls 1 lw 3 t "Daily growth rate"
 
 
@@ -89,9 +108,9 @@ set y2tics nomirror out autofreq
 
 set key top left opaque tc '#707070'
 
-plot filename every ::1 u 1:5 w boxes ls 2 axis x1y2 t "Total deaths", \
-     filename every ::1 u 1:(($6-1)*100) w points ls 2 lw 3 axis x1y1 notitle, \
-     filename every ::1 u 1:(($6-1)*100) w lines ls 2 dashtype 1 lw 3 s sb axis x1y1 notitle, \
+plot filename every ::start_date_index u 1:5 w boxes ls 2 axis x1y2 t "Total deaths", \
+     filename every ::start_date_index u 1:(($6-1)*100) w points ls 2 lw 3 axis x1y1 notitle, \
+     filename every ::start_date_index u 1:(($6-1)*100) w lines ls 2 dashtype 1 lw 3 s sb axis x1y1 notitle, \
      NaN w linespoints ls 2 lw 3 t "Daily growth rate"
 
 #
@@ -106,8 +125,8 @@ set key top left opaque tc '#707070'
 unset yrange
 unset y2range
 
-set  yrange[:NCD_mean +3*NCD_stddev]
-set y2range[:NDD_mean+3*NDD_stddev]
+set  yrange[0:NCD_mean +3*NCD_stddev]
+set y2range[0:NDD_mean+3*NDD_stddev]
 
 set format y  "%.0f"
 set format y2 "%.0f"
@@ -116,11 +135,11 @@ set  ytics nomirror out autofreq
 set y2tics nomirror out autofreq
 
 
-plot  filename every ::1 u 1:4 w points ls 1 lw 3 axis x1y1 notitle, \
-      filename every ::1 u 1:4 w lines ls 1 lw 3 s sb axis x1y1 notitle, \
+plot  filename every ::start_date_index u 1:4 w points ls 1 lw 3 axis x1y1 notitle, \
+      filename every ::start_date_index u 1:4 w lines ls 1 lw 3 s sb axis x1y1 notitle, \
       NaN w linespoints ls 1 lw 3 axis x1y1 t "New daily cases", \
-      filename every ::1 u 1:7 w point ls 2 lw 3 axis x1y2 notitle, \
-      filename every ::1 u 1:7 w lines ls 2 lw 3 s sb axis x1y2 notitle, \
+      filename every ::start_date_index u 1:7 w point ls 2 lw 3 axis x1y2 notitle, \
+      filename every ::start_date_index u 1:7 w lines ls 2 lw 3 s sb axis x1y2 notitle, \
       NaN w linespoints ls 2 lw 3 axis x1y2 t "New daily deaths"
 
 # Deaths over Cases
@@ -145,10 +164,10 @@ set key top left opaque
 set label 10 at graph 0.27, graph 0.82 sprintf("ρ = %.3f", DOC_correlation) left front enhanced tc '#707070'
 
 set label 21 at graph 0.33,graph 0.73 sprintf("Cases/deaths total:\nCases/deaths 7 days:", DEATHS_max/CASES_max*100, DOCLW_slope*100) right front enhanced tc '#707070'
-set label 22 at graph 0.33,graph 0.73 sprintf(" %.1f%%\n %.1f%%", DEATHS_max/CASES_max*100.0, 100.0*NDDLW_sum/NCDLW_sum) left front enhanced tc '#707070'
+set label 22 at graph 0.33,graph 0.73 sprintf(" %.2f%%\n %.2f%%", DEATHS_max/CASES_max*100.0, 100.0*NDDLW_sum/NCDLW_sum) left front enhanced tc '#707070'
 
-plot filename every ::1 u 2:5 w points ls 2 lw 3 axis x1y1 notitle, \
-     filename every ::1 u 2:5 w lines ls 2 lw 2 s sb axis x1y1 t "Deaths over Cases", \
+plot filename every ::start_date_index u 2:5 w points ls 2 lw 3 axis x1y1 notitle, \
+     filename every ::start_date_index u 2:5 w lines ls 2 lw 2 s sb axis x1y1 t "Deaths over Cases", \
      DOCLW_slope*x + DOCLW_intercept w l ls 2 lw 2 dashtype 2 t "Last 7 days linear fit"
 
 unset multiplot
