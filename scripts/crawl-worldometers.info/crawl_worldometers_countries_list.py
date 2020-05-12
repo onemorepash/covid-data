@@ -10,7 +10,7 @@ from lxml               import  html, etree
 
 import crawl_wmeter_definitions as definitions
 
-print ('Trying to craws ' + definitions.wmeter_countries_list_url_prefix + ' ... ', end='')
+print ('Trying to crawl ' + definitions.wmeter_countries_list_url_prefix + ' ... ', end='')
 
 # Connect to worldometers.info and save the coronavirus title page to a temporary file
 request = Request(definitions.wmeter_countries_list_url_prefix, headers={'User-Agent': definitions.wmeter_user_agent})
