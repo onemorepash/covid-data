@@ -60,19 +60,44 @@ for country in country_list:
 
                 cur_country['data']['daily_cumulative'] = country_data
 
+                cur_country['data']['daily']            = {}
+
                 # Get max cases and deaths for current country
                 # if the value doesn't exist, the max is 0
 
                 cur_country['data']['total']['cases']   = 0
                 cur_country['data']['total']['deaths']  = 0
 
-                for date in country_data.values():
+                prev_cases   =   0
+                prev_deaths  =   0
+
+                for date_key in country_data:
+
+                    date = country_data[date_key]
+
+                    cur_country['data']['daily'][date_key] = {}
+
                     if 'cases' in date:
                         if date['cases'] > cur_country['data']['total']['cases']:
                             cur_country['data']['total']['cases'] = date['cases']
+
+                        if (prev_cases != 0):
+                            cur_country['data']['daily'][date_key]['cases_rate'] = date['cases']/prev_cases
+
+                        cur_country['data']['daily'][date_key]['cases_inc'] = date['cases']-prev_cases
+
+                        prev_cases = date['cases']
+
                     if 'deaths' in date:
                         if date['deaths'] > cur_country['data']['total']['deaths']:
                             cur_country['data']['total']['deaths'] = date['deaths']
+
+                        if (prev_deaths != 0):
+                            cur_country['data']['daily'][date_key]['deaths_rate'] = date['deaths']/prev_deaths
+
+                        cur_country['data']['daily'][date_key]['deaths_inc'] = date['deaths']-prev_deaths
+
+                        prev_deaths = date['deaths']
 
                 all_countries_data.append(cur_country)
 
