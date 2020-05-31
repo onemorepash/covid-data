@@ -4,7 +4,8 @@ scripts/**/__pycache__/
 *.py[cod]
 
 data/worldmeters.info/*
+!data/worldmeters.info/.gitkeep
 
-plots/*
-!plots/per-country
+
 plots/per-country/*
+!plots/per-country/.gitkeep
