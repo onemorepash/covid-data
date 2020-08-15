@@ -12,7 +12,7 @@ set style line 2  linecolor rgb "#fb9a99"  linewidth 1.000 dashtype solid pointt
 set boxwidth 0.75 relative
 set style fill solid 0.45 noborder
 
-set term pngcairo size 3000,1700 font "Liberation Sans,10"
+set term pngcairo size 2600,1300 font "Liberation Sans,13"
 
 set output "../../plots/per-country/{{country_cname}}.png"
 
@@ -56,8 +56,9 @@ set grid front
 # Enable multiplot
 #
 
-set multiplot layout 2,2 margin 0.07,0.92,0.1,0.85 spacing 0.11,0.1
-set label 100 "{{country_name}}" center font ",40" at screen 0.5, 0.95 tc '#505050'
+set multiplot layout 2,2 margin char 10,10,5,6 spacing char 20,5
+#set multiplot layout 2,2 margin 0.07,0.92,0.1,0.85 spacing 0.11,0.1
+set label 100 "{{country_name}}" center font ",40" at screen 0.5, 0.97 tc '#505050'
 
 
 #
@@ -77,17 +78,18 @@ set yrange [0:50]
 
 set format x "%b %d" timedate
 set format y "%.0f%%"
-set format y2 "%.0f"
+set format y2 "%.1s%c"
 
 set ylabel "Daily growth rate" tc '#707070'
-set y2label "Total cases" tc '#707070'
+set y2label "Total cases" tc '#707070' offset char -1,0
 
 set ytics nomirror out 10
 set mytics 2
 set y2tics nomirror out autofreq
 set xtics nomirror out
-set xtics "2020-01-20", 24*3600*7
-set grid mytic mxtics
+set xtics "2020-01-20", 24*3600*14
+set xtics font ",12"
+#set grid mytic mxtics
 
 set key top left opaque tc '#707070'
 
@@ -102,9 +104,11 @@ plot filename every ::start_date_index u 1:2 w boxes ls 1 axis x1y2 t "Total cas
 #
 
 set ylabel "Daily growth rate" tc '#707070'
-set y2label "Total deaths" tc '#707070'
+set y2label "Total deaths" tc '#707070' offset char -2,0
 
 set y2tics nomirror out autofreq
+
+set format y2 "%.0s%c"
 
 set key top left opaque tc '#707070'
 
@@ -118,7 +122,7 @@ plot filename every ::start_date_index u 1:5 w boxes ls 2 axis x1y2 t "Total dea
 #
 
 set ylabel "New daily cases" tc '#707070'
-set y2label "New daily deaths" tc '#707070'
+set y2label "New daily deaths" tc '#707070' offset char -3,0
 
 set key top left opaque tc '#707070'
 
@@ -128,8 +132,8 @@ unset y2range
 set  yrange[0:NCD_mean +3*NCD_stddev]
 set y2range[0:NDD_mean+3*NDD_stddev]
 
-set format y  "%.0f"
-set format y2 "%.0f"
+set format y  "%.0s%c"
+set format y2 "%.1s%c"
 
 set  ytics nomirror out autofreq
 set y2tics nomirror out autofreq
@@ -145,13 +149,13 @@ plot  filename every ::start_date_index u 1:4 w points ls 1 lw 3 axis x1y1 notit
 # Deaths over Cases
 
 unset xdata
-set format x "%.0f"
-set format y "%.0f"
+set format x "%.1s%c"
+set format y "%.1s%c"
 unset xrange
 unset yrange
 set yrange [0:]
 
-set ylabel "Deaths" tc '#707070'
+set ylabel "Deaths" tc '#707070' offset char 1,0
 set xlabel "Cases" tc '#707070'
 unset y2label
 
