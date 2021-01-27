@@ -25,8 +25,6 @@ countries_data_json_filename       =    data_dir + 'all_countries_data.json'
 
 countries_datafiles_extention      =    '.txt'
 
-default_year                       =    '2020'
-
 ### Parsing functions
 
 def country_cname_from_href( href ):
@@ -68,7 +66,7 @@ def get_country_data_cumulative_linear(tree):
     # and create a dictionaty { date : { 'cases': value } }
     if data:
         for dd, value in zip(data['xAxis']['categories'], data['series'][0]['data']):
-            date = str(datetime.strptime(default_year + ' ' + dd, '%Y %b %d').date())
+            date = str(datetime.strptime(dd, '%b %d, %Y').date())
             if date not in res:
                 res[date] = {}
             res[date]['cases'] = value
@@ -81,7 +79,7 @@ def get_country_data_cumulative_linear(tree):
     # and create a dictionaty { date : { 'deaths': value } }
     if data:
         for dd, value in zip(data['xAxis']['categories'], data['series'][0]['data']):
-            date = str(datetime.strptime(default_year + ' ' + dd, '%Y %b %d').date())
+            date = str(datetime.strptime(dd, '%b %d, %Y').date())
             if date not in res:
                 res[date] = {}
             res[date]['deaths'] = value

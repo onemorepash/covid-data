@@ -12,7 +12,7 @@ set style line 2  linecolor rgb "#fb9a99"  linewidth 1.000 dashtype solid pointt
 set boxwidth 0.75 relative
 set style fill solid 0.45 noborder
 
-set term pngcairo size 2600,1300 font "Liberation Sans,13"
+set term pngcairo size 3000,1700 font "Liberation Sans,11"
 
 set output "../../plots/per-country/{{country_cname}}.png"
 
@@ -88,7 +88,7 @@ set mytics 2
 set y2tics nomirror out autofreq
 set xtics nomirror out
 set xtics "2020-01-20", 24*3600*14
-set xtics font ",12"
+set xtics font ",11"
 #set grid mytic mxtics
 
 set key top left opaque tc '#707070'
@@ -97,7 +97,6 @@ plot filename every ::start_date_index u 1:2 w boxes ls 1 axis x1y2 t "Total cas
      filename every ::start_date_index u 1:(($3-1)*100) w points ls 1 lw 3 axis x1y1  notitle, \
      filename every ::start_date_index u 1:(($3-1)*100) w l ls 1 dashtype 1 lw 3 s sb axis x1y1 notitle, \
      NaN w linespoints ls 1 lw 3 t "Daily growth rate"
-
 
 #
 # Deaths total and deaths daily rate
