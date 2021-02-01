@@ -138,8 +138,8 @@ def create_gnuplot_data(country_data, datafile):
         # Placeholder for deaths_cur
         format_string  += '{:>15},'
 
-        # Calculate and print deaths daily rate and dayly inc
-        # and add 2 placeholders to the format_string
+        # Calculate and print deaths daily rate and dayly inc,
+        # adding 2 placeholders to the format_string
         if deaths_cur:
             if deaths_prev != 0:
                 deaths_daily_rate = round( deaths_cur/deaths_prev, 3 )
