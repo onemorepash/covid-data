@@ -12,7 +12,7 @@ set style line 2  linecolor rgb "#fb9a99"  linewidth 1.000 dashtype solid pointt
 set boxwidth 0.75 relative
 set style fill solid 0.45 noborder
 
-set term pngcairo size 3000,1700 font "Liberation Sans,13"
+set term pngcairo size 3000,1700 font "Liberation Sans,15"
 
 set output "../../plots/per-country/{{country_cname}}.png"
 
@@ -166,7 +166,7 @@ set key top left opaque
 
 set label 10 at graph 0.27, graph 0.82 sprintf("ρ = %.3f", DOC_correlation) left front enhanced tc '#707070'
 
-set label 21 at graph 0.33,graph 0.73 sprintf("Deaths/cases total:\nCeaths/Deaths 7 days:", DEATHS_max/CASES_max*100, DOCLW_slope*100) right front enhanced tc '#707070'
+set label 21 at graph 0.33,graph 0.73 sprintf("Deaths/cases total:\nDeaths/cases 7 days:", DEATHS_max/CASES_max*100, DOCLW_slope*100) right front enhanced tc '#707070'
 set label 22 at graph 0.33,graph 0.73 sprintf(" %.2f%%\n %.2f%%", DEATHS_max/CASES_max*100.0, 100.0*NDDLW_sum/NCDLW_sum) left front enhanced tc '#707070'
 
 plot filename every ::start_date_index u 2:5 w points ls 2 lw 3 axis x1y1 notitle, \
