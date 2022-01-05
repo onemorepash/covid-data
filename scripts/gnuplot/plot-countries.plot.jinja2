@@ -12,7 +12,7 @@ set style line 2  linecolor rgb "#fb9a99"  linewidth 1.000 dashtype solid pointt
 set boxwidth 0.75 relative
 set style fill solid 0.45 noborder
 
-set term pngcairo size 3000,1700 font "Liberation Sans,15"
+set term pngcairo size 3500,1700 font "Liberation Sans,15"
 
 set output "../../plots/per-country/{{country_cname}}.png"
 
@@ -76,7 +76,7 @@ else {
 
 set yrange [0:50]
 
-set format x "%b %d" timedate
+set format x "%d %b %y" timedate
 set format y "%.0f%%"
 set format y2 "%.1s%c"
 
@@ -87,7 +87,7 @@ set ytics nomirror out 10
 set mytics 2
 set y2tics nomirror out autofreq
 set xtics nomirror out
-set xtics "2020-01-20", 24*3600*14
+set xtics "2020-01-20", 24*3600*28
 set xtics font ",11"
 #set grid mytic mxtics
 
